@@ -171,15 +171,15 @@ def dashboard():
 
         # Column 1 - Download Button
         with col_button1:
-            if 'zip_filename' in st.session_state:
-                zip_filename = st.session_state['zip_filename']
+            if 'word_filename' in st.session_state:
+                word_filename = st.session_state['word_filename']
                 # Ensure that the file exists before trying to open it
-                if os.path.exists(zip_filename):
-                    with open(zip_filename, 'rb') as file:
+                if os.path.exists(word_filename):
+                    with open(word_filename, 'rb') as file:
                         st.download_button(
                             label="Download Report",
                             data=file,
-                            file_name=zip_filename,
+                            file_name=word_filename,
                             mime='application/zip'
                         )
                 else:
