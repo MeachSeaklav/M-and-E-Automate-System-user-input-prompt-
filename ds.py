@@ -137,7 +137,7 @@ def dashboard():
                             st.session_state['word_filename'] = word_filename
                             st.session_state['pdf_filename'] = pdf_filename
 
-                            st.success("Report generated and zip file created successfully.")
+                            # st.success("Report generated and zip file created successfully.")
                         else:
                             st.error("Failed to generate report.")
                     except Exception as e:
@@ -196,7 +196,7 @@ def dashboard():
                         # Send report to Telegram
                         send_to_telegram(word_filename, f"Here is your generated report (Word).")
                         send_to_telegram(pdf_filename, f"Here is your generated report (PDF).")
-                        st.success("Report sent to Telegram successfully!")
+                        # st.success("Report sent to Telegram successfully!")
                     except Exception as e:
                         st.error(f"Failed to send report to Telegram: {e}")
                 else:
