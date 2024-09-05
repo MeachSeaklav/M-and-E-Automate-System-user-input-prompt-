@@ -175,6 +175,10 @@ def save_report_as_word(report, filename):
                 paragraph = doc.add_heading(line.strip()[4:], level=3)
             elif line.strip().startswith("#### "):
                 paragraph = doc.add_heading(line.strip()[5:], level=4)
+            elif line.strip().startswith("##### "):
+                paragraph = doc.add_heading(line.strip()[6:], level=5)
+            elif line.strip().startswith("###### "):
+                paragraph = doc.add_heading(line.strip()[7:], level=6)
             elif line.strip().startswith("* "):
                 doc.add_paragraph(line.strip()[2:], style='List Bullet')
             elif "|" in line:
