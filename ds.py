@@ -4,7 +4,6 @@ import os
 import openai
 from dotenv import load_dotenv
 from zip import create_zip_file
-from email_utils import send_email_with_attachments
 from telegram import send_to_telegram
 from report_generation import generate_report_with_chatgpt
 
