@@ -190,12 +190,12 @@ def dashboard():
             if st.button('Telegram'):
                 if 'word_filename' in st.session_state and 'pdf_filename' in st.session_state:
                     word_filename = st.session_state['word_filename']
-                    pdf_filename = st.session_state['pdf_filename']
+                    # pdf_filename = st.session_state['pdf_filename']
 
                     try:
                         # Send report to Telegram
                         send_to_telegram(word_filename, f"Here is your generated report (Word).")
-                        send_to_telegram(pdf_filename, f"Here is your generated report (PDF).")
+                        # send_to_telegram(pdf_filename, f"Here is your generated report (PDF).")
                         # st.success("Report sent to Telegram successfully!")
                     except Exception as e:
                         st.error(f"Failed to send report to Telegram: {e}")
