@@ -12,7 +12,7 @@ from report_generation import generate_report_with_chatgpt
 load_dotenv()
 
 # Set your OpenAI API key from environment variable
-openai.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 def fetch_data(google_sheet_url):
     try:
