@@ -74,7 +74,7 @@ def dashboard():
                     margin: 0px; 
                     border-radius: 10px;
                     height: 430px;
-                    width: 1010px;
+                    width: 1030px;
                     overflow: auto;
                 }
                 .custom-table {
