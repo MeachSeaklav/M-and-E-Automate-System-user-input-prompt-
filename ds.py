@@ -80,7 +80,8 @@ def dashboard():
                 .custom-table {
                     width: 100%;
                     border-collapse: collapse;
-                    font-family: Khmer OS Content Regular;
+                    
+                    font-family: Khmer OS;
                     font-size: 14px;
                     background-color: rgb(161, 219, 255, 0.3);  /* Light background color for table body */
                     color: white;  
