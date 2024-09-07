@@ -66,8 +66,67 @@ def dashboard():
     # Left column for displaying data
     with col1:
         if df is not None:
-            df_style = df.style.set_properties(**{'background-color': 'rgb(161, 219, 255, 0.3)', 'color': 'white'})
-            st.dataframe(df_style)
+            # Convert DataFrame to HTML without the index
+            html_table = df.to_html(index=False, classes='custom-table', escape=False)
+
+            # Add custom CSS to style the table with your desired background color and no space around it
+            st.markdown("""
+                <style>
+                .table-container {
+                    margin: 0px; 
+                    border-radius: 10px;
+                    height: 380px;
+                    width: 1010px;
+                    overflow: auto;
+                }
+                .custom-table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    font-family: Khmer OS Muol Light;
+                    font-size: 14px;
+                    background-color: rgb(161, 219, 255, 0.3);  /* Light background color for table body */
+                    color: white;  
+                }
+                .custom-table th, .custom-table td {
+                    white-space: nowrap;  /* Ensure text stays on one line */
+                    text-overflow: ellipsis;  /* Add ellipsis if content overflows */
+                    overflow: hidden;  /* Hide overflow content */
+                    padding: 8px;
+                    text-align: left;
+                }
+                .custom-table th {
+                    margin: 0px; 
+                    top: 0px;
+                    background-color: black; 
+                    color: white; 
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    font-weight: bold; 
+                    position: sticky;
+                    top: 0; 
+                    z-index: 1;
+                }
+                .custom-table td {
+                    background-color: rgb(161, 219, 255, 0.3); /* Lighter stripe for alternating rows */
+                    border: 1px solid rgba(255, 255, 255, 0.1); /* Border for cells */
+                }
+                
+                .custom-table td:first-child, .custom-table th:first-child {
+                    margin: 0px; 
+                    position: sticky;
+                    border: 1px none rgba(255, 255, 255, 0.1);
+                    left: 0; 
+                    background-color: black; 
+                    z-index: 1;
+                }
+                </style>
+            """, unsafe_allow_html=True)
+
+            # Wrap the table in a scrollable container
+            st.markdown(f"""
+                <div class="table-container">
+                    {html_table}
+                </div>
+            """, unsafe_allow_html=True)
 
     # Right column for prompt input and actions
     with col2:
