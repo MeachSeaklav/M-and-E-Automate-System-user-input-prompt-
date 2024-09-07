@@ -23,7 +23,7 @@ def fetch_data(google_sheet_url):
 
 def dashboard():
     st.set_page_config(
-        page_title="DCx Co.,ltd",
+        page_title="DCx Co., Ltd",
         page_icon="https://dcxsea.com/asset/images/logo/LOGO_DCX.png",
         layout="wide",
         initial_sidebar_state="collapsed"
@@ -34,7 +34,7 @@ def dashboard():
         <!-- Logo -->
         <img src="https://dcxsea.com/asset/images/logo/LOGO_DCX.png" style="width: 200px; margin-right: 15px;">
         <!-- Title -->
-        <h4 style="font-family: 'Khmer OS Muol Light', Arial, sans-serif; color: white; margin-bottom: -90px;">DCx Co.,ltd</h4>
+        <h4 style="font-family: 'Khmer OS Muol Light', Arial, sans-serif; color: white; margin-bottom: -90px;">DCx Co., Ltd</h4>
     </div>
     """, unsafe_allow_html=True)
 
