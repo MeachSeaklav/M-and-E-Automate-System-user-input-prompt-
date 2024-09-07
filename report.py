@@ -58,7 +58,7 @@ def create_cover_page(doc, report_title):
     cover = doc.add_paragraph()
     cover.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
-    run = cover.add_run("Indigenous Agriculture Adaptation")
+    run = cover.add_run("Baseline for LASED III & CSLICP")
     run.font.size = Pt(24)
     run.bold = True
     cover.add_run("\n").font.size = Pt(24)
@@ -69,14 +69,14 @@ def create_cover_page(doc, report_title):
     # Add prepared for
     prepared_for = doc.add_paragraph()
     prepared_for.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = prepared_for.add_run("Prepared for: Jack Jasmin")
+    run = prepared_for.add_run("Prepared for: DCx Assistant")
     run.font.size = Pt(14)
     run.add_break()  # Add a break line
     run.add_break()
-    run = prepared_for.add_run("Prepared by: Black Eye Team")
-    run.font.size = Pt(14)
-    run.add_break()
-    run.add_break()
+    # run = prepared_for.add_run("Prepared by: Black Eye Team")
+    # run.font.size = Pt(14)
+    # run.add_break()
+    # run.add_break()
 
     # Place the date at the bottom center of the cover page
     footer = section.footer
