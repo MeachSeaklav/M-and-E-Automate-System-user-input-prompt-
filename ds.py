@@ -31,9 +31,7 @@ def dashboard():
     
     st.markdown("""
     <div style="display: flex; justify-content: center; align-items: center; margin-top: -40px; margin-bottom: 20px;">
-        <!-- Logo -->
         <img src="https://dcxsea.com/asset/images/logo/LOGO_DCX.png" style="width: 200px; margin-right: 15px;">
-        <!-- Title -->
         <h4 style="font-family: 'Khmer OS Muol Light', Arial, sans-serif; color: white; margin-bottom: -90px;">DCx Co., Ltd</h4>
     </div>
     """, unsafe_allow_html=True)
