@@ -94,6 +94,7 @@ def dashboard():
                     text-align: left;
                 }
                 .custom-table th {
+                    text-align: center;
                     margin: 0px; 
                     top: 0px;
                     background-color: black; 
