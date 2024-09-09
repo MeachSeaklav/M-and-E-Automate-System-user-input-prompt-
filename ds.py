@@ -73,8 +73,8 @@ def dashboard():
                 .table-container {
                     margin: 0px; 
                     border-radius: 10px;
-                    height: 430px;
-                    width: 1030px;
+                    height: 500px;
+                    width: 100%;
                     overflow: auto;
                 }
                 .custom-table {
