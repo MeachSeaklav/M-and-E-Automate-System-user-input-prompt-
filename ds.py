@@ -49,7 +49,7 @@ def dashboard():
     st.markdown("""
         <div style="display: flex; align-items: center;">
             <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-line-chart-growth-3814121-3187502.png" alt="logo" style="width: 70px; margin-right: 15px;">
-            <h5 style="font-family: 'Khmer OS Muol Light', Arial, sans-serif; margin-top: 25px;">Baseline Data for LASED III Project</h5>
+            <h5 style="font-family: 'Khmer OS Muol Light', Arial, sans-serif; margin-top: 25px;">ប្រព័ន្ធគ្រប់គ្រងព័ត៌មានជលផល</h5>
         </div>
     """, unsafe_allow_html=True)
 
