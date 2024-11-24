@@ -52,10 +52,6 @@ def dashboard():
             <h5 style="font-family: 'Khmer OS Muol Light', Arial, sans-serif; margin-top: 25px;">ប្រព័ន្ធគ្រប់គ្រងព័ត៌មានជលផល</h5>
             <h3 style="font-family: 'Khmer OS Muol Light', Arial, sans-serif; margin-top: 0; font-size: 18px; font-weight: bold; vertical-align: middle;">Fisheries Information Management System (FIMS)</h3><br><br><br>
         </div>
-        # <div style="display: flex; align-items: center;">
-        #         <img src="https://symbolshub.org/wp-content/uploads/2019/10/bullet-point-symbol.png" alt="logo" style="width: 25px; margin-right: 5px; vertical-align: middle;">
-        #         <h3 style="font-family: 'Khmer OS Muol Light', Arial, sans-serif; margin-top: 0; font-size: 18px; font-weight: bold; vertical-align: middle;">Fisheries Information Management System (FIMS)</h3><br><br><br>
-        # </div>
     """, unsafe_allow_html=True)
 
     # Google Sheets URL (the one you want to fetch data from directly)
