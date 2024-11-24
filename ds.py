@@ -16,6 +16,7 @@ openai.api_key = st.secrets["OPENAI_API_KEY"]
 def fetch_data(google_sheet_url):
     try:
         df = pd.read_csv(google_sheet_url)
+        df.insert(0, "No", range(1, len(df) + 1))
     except Exception as e:
         st.error(f"Failed to fetch data from Google Sheets: {e}")
         return None
