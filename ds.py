@@ -47,12 +47,15 @@ def dashboard():
 
     # Header section
     st.markdown("""
-        <div style="display: flex; align-items: center;">
-            <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-line-chart-growth-3814121-3187502.png" alt="logo" style="width: 70px; margin-right: 15px;">
-            <h5 style="font-family: 'Khmer OS Muol Light', Arial, sans-serif; margin-top: 25px;">ប្រព័ន្ធគ្រប់គ្រងព័ត៌មានជលផល</h5>
-            <h3 style="font-family: 'Khmer OS Muol Light', Arial, sans-serif; margin-top: 0; font-size: 18px; font-weight: bold; vertical-align: middle;">Fisheries Information Management System (FIMS)</h3><br><br><br>
+    <div style="display: flex; align-items: center;">
+        <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-line-chart-growth-3814121-3187502.png" alt="logo" style="width: 70px; margin-right: 15px;">
+        <div>
+            <h5 style="font-family: 'Khmer OS Muol Light', Arial, sans-serif; margin: 0; color: white;">ប្រព័ន្ធគ្រប់គ្រងព័ត៌មានជលផល</h5>
+            <h3 style="font-family: Arial, sans-serif; margin: 0; font-size: 18px; font-weight: bold; color: white;">Fisheries Information Management System (FIMS)</h3>
         </div>
-    """, unsafe_allow_html=True)
+    </div>
+    <br><br>
+""", unsafe_allow_html=True)
 
     # Google Sheets URL (the one you want to fetch data from directly)
     google_sheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTDG2d2dfb6GHeGUy-nULaIkY26I1cbDA0vMnuyEXFS2vpqtU8E_0kfPCMGtxPXv_w8Vp8bXytV5ipN/pub?gid=680814381&output=csv'
