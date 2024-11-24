@@ -53,7 +53,8 @@ def dashboard():
     """, unsafe_allow_html=True)
 
     # Google Sheets URL (the one you want to fetch data from directly)
-    google_sheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTDG2d2dfb6GHeGUy-nULaIkY26I1cbDA0vMnuyEXFS2vpqtU8E_0kfPCMGtxPXv_w8Vp8bXytV5ipN/pubhtml?gid=680814381&single=true'
+    google_sheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTDG2d2dfb6GHeGUy-nULaIkY26I1cbDA0vMnuyEXFS2vpqtU8E_0kfPCMGtxPXv_w8Vp8bXytV5ipN/pub?gid=680814381&output=csv
+'
 
     # Fetch the data from the predefined Google Sheet
     df = fetch_data(google_sheet_url)
