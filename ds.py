@@ -52,7 +52,6 @@ def dashboard():
             <h5 style="font-family: 'Khmer OS Muol Light', Arial, sans-serif; margin-top: 25px;">ប្រព័ន្ធគ្រប់គ្រងព័ត៌មានជលផល(Fisheries Information Management System (FIMS))</h5>
         </div>
     </div>
-    <br><br>
 """, unsafe_allow_html=True)
 
     # Google Sheets URL (the one you want to fetch data from directly)
